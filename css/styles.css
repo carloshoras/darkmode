@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- */
+
+body {
+    padding: 12px 12px;
+}
+body.dark {
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    height: 100px;
+}
+header p{
+    text-align: center;
+    font-size: 30px;
+}
+header p.dark, h1.dark {
+    color: yellow;
+}
+.darkModebutton {
+    display: flex;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+.darkModebutton p {
+    font-size: 22px;
+}
+.darkModebutton p.dark {
+    color: white;
+}
+.grey {
+    background-color: #cbcbcb;
+    height: 22px;
+    width: 50px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 0 4px;
+}
+.grey:hover {
+    cursor: pointer;
+}
+.grey.dark {
+    justify-content: flex-end;
+}
+.yellow{
+    background-color: #f8d247;
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    padding-left: 2px;
+
+}
+.blue{
+    background-color: #7777ef;
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    padding-left: 2px;
+
+}
+.blue img {
+    width: 12px;
+    margin: 0px;
+}
+.yellow img {
+    width: 12px;
+    margin: 0px;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+}
+.picture img {
+    width:100%;
+}
+.report {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.report h1 {
+   font-size: 40px; 
+   font-weight: bold;
+}
+.report p{
+    text-align:left;
+    width: 70%;
+}
+.report p.dark {
+    color: white;
+}
